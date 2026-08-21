@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cómo cambiar la batería del coche paso a paso | Guía completa</title>
+    <meta name="description" content="Aprende cómo cambiar la batería del coche paso a paso. Herramientas necesarias, orden de desconexión y conexión, baterías Start-Stop y qué comprobar después de instalarla.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cambiarbaterias.es/tutorial.html">
+    <link rel="icon" href="cambiarbaterias_favicon.png" type="image/png">
+
+    <meta property="og:title" content="Cómo cambiar la batería del coche paso a paso">
+    <meta property="og:description" content="Guía práctica para sustituir la batería del coche: preparación, desconexión, instalación y comprobaciones finales.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cambiarbaterias.es/tutorial.html">
+    <meta property="og:site_name" content="CambiarBaterias.es">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTD85PB014"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WTD85PB014');
+    </script>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cómo cambiar la batería del coche paso a paso",
+      "description": "Guía general para preparar, retirar y sustituir la batería de un coche.",
+      "totalTime": "PT30M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Llave adecuada para los bornes y la fijación de la batería"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Guantes de protección"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Preparar el vehículo",
+          "text": "Apaga el motor, estaciona el vehículo en una zona segura y prepara las herramientas necesarias."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Identificar los bornes",
+          "text": "Localiza los terminales positivo y negativo y comprueba cómo están instalados antes de desconectarlos."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Desconectar la batería",
+          "text": "Sigue el procedimiento recomendado por el fabricante para desconectar los terminales."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Retirar la batería antigua",
+          "text": "Libera la sujeción de la batería y retírala con cuidado."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Instalar la batería nueva",
+          "text": "Coloca una batería compatible, fíjala correctamente y conecta los terminales siguiendo las indicaciones del vehículo."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Comprobar el vehículo",
+          "text": "Comprueba el arranque y los sistemas eléctricos y sigue las indicaciones del fabricante si es necesario registrar o adaptar la batería."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --blue-950: #071a33;
+            --blue-900: #0b2a4a;
+            --blue-800: #0e3a66;
+            --blue-700: #14558f;
+            --blue-600: #1976c5;
+            --blue-100: #e8f3fc;
+            --yellow: #f7c948;
+            --yellow-light: #fff5cf;
+            --green: #176b4a;
+            --red: #a33b3b;
+            --text: #17212b;
+            --muted: #5c6875;
+            --bg: #f5f8fb;
+            --white: #ffffff;
+            --border: #dfe7ef;
+            --shadow: 0 12px 35px rgba(8, 36, 64, .09);
+            --radius: 18px;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.68;
+        }
+
+        a { color: inherit; }
+
+        .container {
+            width: min(1050px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .topbar {
+            background: var(--blue-950);
+            color: #dbe9f5;
+            font-size: .9rem;
+            padding: 9px 0;
+        }
+
+        .topbar .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .topbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        header {
+            background:
+                radial-gradient(circle at 85% 15%, rgba(25,118,197,.35), transparent 34%),
+                linear-gradient(135deg, var(--blue-950), var(--blue-800));
+            color: white;
+        }
+
+        nav {
+            border-bottom: 1px solid rgba(255,255,255,.12);
+        }
+
+        .nav-inner {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.3rem;
+        }
+
+        .brand-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            background: var(--yellow);
+            color: var(--blue-950);
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #edf6ff;
+            padding: 9px 13px;
+            border-radius: 9px;
+            font-weight: 700;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,.1);
+        }
+
+        .hero {
+            padding: 62px 0 68px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            background: rgba(247,201,72,.15);
+            color: #ffe28a;
+            border: 1px solid rgba(247,201,72,.35);
+            border-radius: 999px;
+            padding: 7px 13px;
+            font-size: .82rem;
+            font-weight: 900;
+            margin-bottom: 17px;
+        }
+
+        h1 {
+            font-size: clamp(2.25rem, 5vw, 3.8rem);
+            line-height: 1.08;
+            letter-spacing: -1.5px;
+            margin: 0 0 20px;
+            max-width: 850px;
+        }
+
+        .hero p {
+            color: #dce9f4;
+            font-size: 1.12rem;
+            max-width: 800px;
+            margin: 0;
+        }
+
+        .breadcrumb {
+            margin-top: 28px;
+            font-size: .9rem;
+            color: #b9cee0;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 58px 0 72px;
+        }
+
+        .notice {
+            background: var(--yellow-light);
+            border: 1px solid #efd87d;
+            border-radius: 16px;
+            padding: 20px 22px;
+            margin-bottom: 35px;
+        }
+
+        .notice strong {
+            color: #5c4700;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 285px;
+            gap: 30px;
+            align-items: start;
+        }
+
+        article,
+        .sidebar-card,
+        .step-card,
+        .faq details,
+        .sale-box {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        article {
+            padding: 38px;
+        }
+
+        article h2 {
+            font-size: 2rem;
+            line-height: 1.18;
+            margin: 42px 0 15px;
+            letter-spacing: -.6px;
+        }
+
+        article h2:first-child {
+            margin-top: 0;
+        }
+
+        article h3 {
+            font-size: 1.3rem;
+            margin: 30px 0 10px;
+        }
+
+        article p {
+            color: #354250;
+            margin: 0 0 17px;
+        }
+
+        article ul,
+        article ol {
+            color: #354250;
+            padding-left: 24px;
+        }
+
+        article li {
+            margin: 9px 0;
+        }
+
+        .toc {
+            background: var(--blue-100);
+            border: 1px solid #c9e2f5;
+            border-radius: 16px;
+            padding: 22px;
+            margin-bottom: 34px;
+        }
+
+        .toc h2 {
+            font-size: 1.15rem;
+            margin: 0 0 10px;
+        }
+
+        .toc ul {
+            margin: 0;
+            padding-left: 19px;
+        }
+
+        .toc a {
+            color: var(--blue-700);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .steps {
+            display: grid;
+            gap: 18px;
+            margin: 25px 0;
+        }
+
+        .step-card {
+            padding: 24px;
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            gap: 17px;
+            box-shadow: none;
+        }
+
+        .step-number {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--blue-800);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-weight: 900;
+        }
+
+        .step-card h3 {
+            margin: 0 0 7px;
+            font-size: 1.2rem;
+        }
+
+        .step-card p {
+            margin: 0;
+        }
+
+        .warning {
+            border-left: 5px solid var(--red);
+            background: #fff4f4;
+            padding: 20px 22px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .warning strong {
+            color: var(--red);
+        }
+
+        .tip {
+            border-left: 5px solid var(--green);
+            background: #f0faf5;
+            padding: 20px 22px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .tip strong {
+            color: var(--green);
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar-card {
+            padding: 24px;
+            margin-bottom: 18px;
+        }
+
+        .sidebar-card h3 {
+            margin: 0 0 13px;
+            font-size: 1.12rem;
+        }
+
+        .sidebar-card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .sidebar-card li {
+            margin: 8px 0;
+            color: var(--muted);
+            font-size: .93rem;
+        }
+
+        .sidebar-card a {
+            color: var(--blue-700);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .sidebar-card a:hover {
+            text-decoration: underline;
+        }
+
+        .faq {
+            display: grid;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .faq details {
+            padding: 18px 20px;
+            box-shadow: none;
+        }
+
+        .faq summary {
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .faq p {
+            margin: 12px 0 0;
+        }
+
+        .sale-box {
+            margin-top: 35px;
+            padding: 28px;
+            text-align: center;
+            background: linear-gradient(135deg, #f9fbfd, #edf5fb);
+        }
+
+        .sale-box h2 {
+            margin: 0 0 9px;
+            font-size: 1.45rem;
+        }
+
+        .sale-box p {
+            margin: 0 auto 18px;
+            max-width: 700px;
+            color: var(--muted);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-weight: 800;
+        }
+
+        .button-primary {
+            background: var(--blue-800);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: var(--blue-700);
+        }
+
+        footer {
+            background: var(--blue-950);
+            color: #c9d7e3;
+            padding: 38px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: .9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .small-note {
+            font-size: .82rem;
+            color: #7b8793;
+            margin-top: 9px;
+        }
+
+        @media (max-width: 850px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .container {
+                width: min(100% - 28px, 1050px);
+            }
+
+            .topbar .container,
+            .nav-inner,
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-inner {
+                padding: 14px 0;
+                gap: 12px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .nav-links a {
+                padding: 7px 8px;
+                font-size: .88rem;
+            }
+
+            article {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 2.3rem;
+            }
+
+            article h2 {
+                font-size: 1.7rem;
+            }
+
+            .step-card {
+                grid-template-columns: 40px 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="container">
+            <span>Guía práctica para sustituir la batería del coche</span>
+            <a href="index.html">← Volver a CambiarBaterias.es</a>
+        </div>
+    </div>
+
+    <header>
+        <nav aria-label="Navegación principal">
+            <div class="container nav-inner">
+                <a class="brand" href="index.html" aria-label="CambiarBaterias.es - Inicio">
+                    <span class="brand-icon">⚡</span>
+                    <span>CambiarBaterias.es</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="tutorial.html">Cómo cambiarla</a>
+                    <a href="precios.html">Precios</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container hero">
+            <span class="eyebrow">GUÍA PASO A PASO</span>
+            <h1>Cómo cambiar la batería del coche paso a paso</h1>
+            <p>
+                Una guía práctica para entender el proceso de sustitución de una batería de coche:
+                qué preparar, cómo retirar la batería antigua, cómo instalar la nueva y qué
+                comprobar después.
+            </p>
+
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a> &nbsp;›&nbsp; Cómo cambiar la batería del coche
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="notice">
+                <strong>Importante:</strong> esta es una guía general. El procedimiento puede variar
+                según el modelo y año del vehículo. Antes de trabajar en el sistema eléctrico,
+                consulta el manual del fabricante y sigue sus indicaciones específicas.
+            </div>
+
+            <div class="layout">
+                <article>
+
+                    <div class="toc">
+                        <h2>Contenido de esta guía</h2>
+                        <ul>
+                            <li><a href="#antes">Antes de empezar</a></li>
+                            <li><a href="#herramientas">Herramientas necesarias</a></li>
+                            <li><a href="#pasos">Cómo cambiar la batería paso a paso</a></li>
+                            <li><a href="#startstop">Baterías Start-Stop</a></li>
+                            <li><a href="#despues">Qué hacer después del cambio</a></li>
+                            <li><a href="#errores">Errores habituales</a></li>
+                            <li><a href="#faq">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 id="antes">Antes de empezar: ¿realmente necesitas cambiar la batería?</h2>
+
+                    <p>
+                        Una batería que falla puede provocar problemas de arranque y otros síntomas
+                        eléctricos. Sin embargo, que el coche no arranque no significa necesariamente
+                        que la batería esté averiada: también pueden existir problemas en el alternador,
+                        el motor de arranque, las conexiones o el propio sistema eléctrico.
+                    </p>
+
+                    <p>
+                        Si la batería tiene varios años, el arranque se ha vuelto más lento o el vehículo
+                        presenta señales de falta de energía, puede ser conveniente comprobar su estado
+                        antes de comprar una nueva.
+                    </p>
+
+                    <div class="tip">
+                        <strong>Consejo:</strong> antes de comprar una batería, compara las especificaciones
+                        de la batería instalada con las recomendadas por el fabricante. No elijas únicamente
+                        por el precio.
+                    </div>
+
+                    <h2 id="herramientas">Herramientas necesarias</h2>
+
+                    <p>
+                        Las herramientas exactas dependen del vehículo y de cómo esté instalada la batería.
+                        Como orientación, normalmente necesitarás:
+                    </p>
+
+                    <ul>
+                        <li>Una llave o herramienta adecuada para los bornes.</li>
+                        <li>Una herramienta para retirar la sujeción de la batería, si la lleva.</li>
+                        <li>Guantes de protección.</li>
+                        <li>La batería nueva compatible con el vehículo.</li>
+                    </ul>
+
+                    <p>
+                        Algunos vehículos tienen la batería en lugares poco accesibles o utilizan sistemas
+                        específicos de fijación. En esos casos pueden ser necesarias herramientas adicionales.
+                    </p>
+
+                    <h2 id="pasos">Cómo cambiar la batería del coche paso a paso</h2>
+
+                    <p>
+                        El procedimiento siguiente es una orientación general. El orden exacto y las
+                        operaciones necesarias pueden cambiar en función del vehículo.
+                    </p>
+
+                    <div class="steps">
+
+                        <section class="step-card">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h3>Apaga el vehículo y prepara la zona</h3>
+                                <p>
+                                    Estaciona el coche en una superficie estable, apaga el motor y asegúrate
+                                    de que el vehículo está correctamente inmovilizado. Retira la llave y
+                                    evita trabajar con consumidores eléctricos conectados.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="step-card">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h3>Localiza la batería y comprueba sus conexiones</h3>
+                                <p>
+                                    Localiza la batería y observa cómo están colocados los terminales,
+                                    la fijación y cualquier cable o elemento adicional. Antes de desmontar,
+                                    comprueba que la batería nueva es compatible.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="step-card">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h3>Desconecta los terminales</h3>
+                                <p>
+                                    Sigue el orden indicado por el fabricante para desconectar los terminales.
+                                    En muchos vehículos se desconecta primero el terminal negativo, pero
+                                    debes seguir siempre las instrucciones específicas de tu vehículo.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="step-card">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h3>Retira la batería antigua</h3>
+                                <p>
+                                    Una vez desconectados los terminales, libera la sujeción que mantiene
+                                    la batería en su posición. Las baterías pueden pesar bastante, así que
+                                    levántala con cuidado y mantén una postura estable.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="step-card">
+                            <div class="step-number">5</div>
+                            <div>
+                                <h3>Coloca y fija la batería nueva</h3>
+                                <p>
+                                    Coloca la batería nueva en la misma posición y comprueba que queda
+                                    correctamente asentada. Vuelve a instalar el sistema de fijación para
+                                    evitar movimientos durante la conducción.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="step-card">
+                            <div class="step-number">6</div>
+                            <div>
+                                <h3>Conecta los terminales</h3>
+                                <p>
+                                    Conecta los terminales siguiendo el procedimiento recomendado por el
+                                    fabricante y asegúrate de que las conexiones quedan firmes. Evita
+                                    forzar los terminales o invertir las conexiones.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section class="step-card">
+                            <div class="step-number">7</div>
+                            <div>
+                                <h3>Comprueba que todo funciona</h3>
+                                <p>
+                                    Arranca el vehículo y comprueba que el motor arranca con normalidad.
+                                    Revisa también los sistemas eléctricos y cualquier mensaje o testigo
+                                    que pueda aparecer en el cuadro de instrumentos.
+                                </p>
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <div class="warning">
+                        <strong>Precaución:</strong> nunca improvises si no tienes claro qué terminal,
+                        conector o elemento debes manipular. Los vehículos modernos pueden incorporar
+                        sistemas electrónicos sensibles y procedimientos específicos de sustitución.
+                    </div>
+
+                    <h2 id="startstop">¿Qué ocurre con las baterías Start-Stop?</h2>
+
+                    <p>
+                        Los vehículos equipados con Start-Stop pueden utilizar tecnologías de batería
+                        específicas, como EFB o AGM. Estas baterías están diseñadas para soportar
+                        condiciones de funcionamiento diferentes a las de una batería convencional.
+                    </p>
+
+                    <p>
+                        Por eso, cuando un coche incorpora Start-Stop, no conviene sustituir una batería
+                        específica por otra convencional simplemente porque tenga unas dimensiones similares.
+                        Hay que comprobar qué tecnología y especificaciones recomienda el fabricante.
+                    </p>
+
+                    <div class="tip">
+                        <strong>Importante:</strong> algunos vehículos modernos pueden requerir que la
+                        nueva batería sea registrada, adaptada o codificada después de sustituirla.
+                        Si el fabricante indica este procedimiento, debe realizarse con la herramienta
+                        correspondiente.
+                    </div>
+
+                    <h2 id="despues">¿Qué hacer después de cambiar la batería?</h2>
+
+                    <p>
+                        Una vez instalada la batería, no siempre basta con comprobar que el coche arranca.
+                        Algunos vehículos pueden perder determinados ajustes eléctricos al desconectar
+                        la alimentación y otros pueden mostrar avisos hasta completar un procedimiento
+                        de inicialización.
+                    </p>
+
+                    <p>Dependiendo del modelo, puede ser necesario:</p>
+
+                    <ul>
+                        <li>Comprobar el reloj y otros ajustes del vehículo.</li>
+                        <li>Revisar los elevalunas u otros elementos que puedan requerir inicialización.</li>
+                        <li>Comprobar que no aparecen testigos o mensajes de error.</li>
+                        <li>Registrar o adaptar la batería nueva cuando el vehículo lo requiera.</li>
+                    </ul>
+
+                    <p>
+                        Consulta siempre el manual del vehículo si aparece algún aviso después del cambio.
+                    </p>
+
+                    <h2 id="errores">Errores habituales al cambiar una batería</h2>
+
+                    <h3>Comprar una batería que no es compatible</h3>
+                    <p>
+                        No basta con que la batería quepa físicamente. Hay que comprobar sus características
+                        y compatibilidad con el sistema eléctrico del vehículo.
+                    </p>
+
+                    <h3>No asegurar correctamente la batería</h3>
+                    <p>
+                        La batería debe quedar correctamente fijada. Una batería que se mueve durante la
+                        conducción puede provocar problemas y daños.
+                    </p>
+
+                    <h3>Invertir las conexiones</h3>
+                    <p>
+                        Es fundamental identificar correctamente los terminales positivo y negativo y
+                        seguir las instrucciones del fabricante durante la desconexión y conexión.
+                    </p>
+
+                    <h3>Ignorar los sistemas Start-Stop</h3>
+                    <p>
+                        En vehículos con Start-Stop hay que prestar especial atención al tipo de batería
+                        y a los procedimientos electrónicos que pueda exigir el fabricante.
+                    </p>
+
+                    <h2 id="faq">Preguntas frecuentes</h2>
+
+                    <div class="faq">
+
+                        <details>
+                            <summary>¿Puedo cambiar la batería del coche yo mismo?</summary>
+                            <p>
+                                En algunos vehículos la sustitución puede ser una operación relativamente
+                                sencilla, pero los coches modernos pueden tener procedimientos específicos.
+                                Si no estás seguro, es recomendable acudir a un profesional.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>¿Qué borne se desconecta primero?</summary>
+                            <p>
+                                El procedimiento puede variar según el vehículo. En muchos casos se comienza
+                                por el terminal negativo, pero debes seguir las indicaciones del fabricante
+                                para tu modelo concreto.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>¿Qué pasa si mi coche tiene Start-Stop?</summary>
+                            <p>
+                                Debes comprobar qué tecnología de batería requiere el vehículo. Puede utilizar
+                                una batería EFB o AGM y algunos modelos pueden necesitar un procedimiento de
+                                registro o adaptación después de la sustitución.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>¿Cuánto tiempo se tarda en cambiar una batería?</summary>
+                            <p>
+                                El tiempo depende mucho del vehículo y de la accesibilidad de la batería.
+                                En algunos coches el acceso es sencillo, mientras que en otros puede estar
+                                ubicada en un lugar que requiere desmontar elementos adicionales.
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>¿Qué hago con la batería vieja?</summary>
+                            <p>
+                                Las baterías de automóvil deben gestionarse como residuos específicos.
+                                Llévala a un punto de recogida o establecimiento autorizado para su correcta
+                                gestión y reciclaje.
+                            </p>
+                        </details>
+
+                    </div>
+
+                    <div class="sale-box">
+                        <h2>¿Te interesa CambiarBaterias.es?</h2>
+                        <p>
+                            El dominio <strong>CambiarBaterias.es</strong> está disponible para adquisición.
+                            Si tienes un proyecto relacionado con automoción, baterías o recambios,
+                            puedes solicitar información.
+                        </p>
+                        <a class="button button-primary" href="mailto:admin@cambiarbaterias.es">
+                            Solicitar información →
+                        </a>
+                    </div>
+
+                </article>
+
+                <aside class="sidebar">
+                    <div class="sidebar-card">
+                        <h3>En esta web</h3>
+                        <ul>
+                            <li><a href="index.html">Guía principal</a></li>
+                            <li><a href="tutorial.html">Cómo cambiar la batería</a></li>
+                            <li><a href="precios.html">Precios de baterías</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Antes de comprar</h3>
+                        <ul>
+                            <li>Comprueba el tipo de batería.</li>
+                            <li>Revisa capacidad y corriente de arranque.</li>
+                            <li>Comprueba dimensiones y bornes.</li>
+                            <li>Si tiene Start-Stop, verifica si necesita AGM o EFB.</li>
+                            <li>Consulta el manual del vehículo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>¿Cuánto cuesta?</h3>
+                        <p style="color:var(--muted); font-size:.93rem;">
+                            Consulta precios orientativos según el tipo de batería.
+                        </p>
+                        <a href="precios.html">Ver precios →</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <div>
+                <strong style="color:white;">CambiarBaterias.es</strong>
+                <p>Guías y consejos sobre baterías de coche.</p>
+            </div>
+
+            <div>
+                <p>
+                    © 2026 CambiarBaterias.es ·
+                    <a href="mailto:admin@cambiarbaterias.es">Contacto</a> ·
+                    <a href="mailto:admin@cambiarbaterias.es">Dominio disponible</a>
+                </p>
+                <p class="small-note">
+                    Esta guía es informativa y no sustituye las indicaciones del fabricante del vehículo.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
